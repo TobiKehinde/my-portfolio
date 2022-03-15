@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tobi Ibidapo-Obe</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <!-- Use JavaScript to change CSS href-->
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <!-- My font-awesome kit -->
+    <script src="https://kit.fontawesome.com/719e1c486b.js" crossorigin="anonymous"></script>
+    <!-- Import jquery for joining the js files -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K682NBM');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K682NBM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I am Tobi Ibidapo-Obe</h1>
+            </div>
+
+            <div class="nav-wrapper">
+                <ul class="navigation">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="left-column">
+                    <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+                </div>
+
+                <div class="right-column">
+
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>A bit of me</h3>
+                            <p>I'm a data analyst with experience in translating data into actionable insights to solve
+                                problems and drive innovative processes.</p>
+                            <p>I am currently looking for a web developer role.</p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="s2">
+        <div class="main-container">
+
+            <div class="about-wrapper">
+                <div>
+                    <h4>MY EXPERTISE</h4>
+                    <hr>
+
+                    <p>Full-stack development, having taken web development courses, completed online coding challenges,
+                        and web development boot camps.
+                    </p>
+                    <p>Here is my confident skillset at the
+                        moment;</p>
+                    <div id="skills">
+
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>React</li>
+                            <li>D3.js</li>
+                            <li>APIs</li>
+                        </ul>
+
+                        <ul>
+                            <li>PHP</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Python (Django)</li>
+                            <li>SQL Database</li>
+                            <li>MongoDB Database</li>
+                            <li>Web Analytics (Google Analytics, GTM)</li>
+                            <li>Web Cloud Server (Heroku)</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certification">
+                    <img id="img_certification" src="./assets/images/Tobi FCC.JPG">
+                    <h3>Back End Development and APIs Certification</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my completed projects</h3>
+
+            <!-- Display project container  -->
+            <div id="projectsContainer" class="project-grid"></div>
+
+            <script src="./assets/js/data.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                for (var i = 0; i < data.length; i++) {
+                    document.getElementById('projectsContainer').innerHTML += `
+			<div class="project-cards">
+				<img class="thumbnail" src=${data[i].thumbnail}>
+				<div class="project-content">
+					<h6 class="project-title">${data[i].title}</h6>
+					<ul class="project-tag">${data[i].tag}</ul>
+					<p class="project-desc">${data[i].description}</p>
+				</div>
+					<div class="project-links">
+							
+							<button class="project-button">
+								<a href=${data[i].source_code} target="_blank">View code
+                                    <i
+                    class="fa fa-code"></i></a>
+								</a>
+							</button>
+							<button class="project-button">
+								<a href=${data[i].visit_site} target="_blank">Visit site
+                                    <i
+                    class="fa fa-globe"></i></a>
+							</button>
+            </div> 
+			</div>`}
+            </script>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <a href=""></a>
+            <h3 style="text-align: center;">Get In Touch</h3>
+
+            <form id="contact-form" name="contact-me" method="POST" data-netlify="true">
+
+                <label>Name</label>
+                <input class="input-field" type="text" name="name" required>
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="email" name="email" required>
+
+                <label>Message</label>
+                <textarea class="input-field" name="message" required></textarea>
+
+                <button class="button" type="submit">Send message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
