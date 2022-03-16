@@ -3,7 +3,7 @@ var data = [
         'thumbnail': 'assets/images/Restaurant-website.jpg',
         'title': 'Restaurant Website with Chatbot integration',
         'tag': 'HTML, CSS, Bootstrap, jquery, JS',
-        'description': "<strong>Frontend Project</strong></br> A personal frontend practice project. I gave it my style with CSS and used Bootstrap 5 to make the design responsive. I also applied jquery and javascript in making choices through the menu, and a chat icon for chatbot integration.</p>",
+        'description': "<strong>Frontend Project</strong></br> A personal frontend practice project. I gave it my style with CSS and used Bootstrap 5 to make the design responsive. I also applied jquery and javascript in making choices through the menu and a chat icon for chatbot integration.</p>",
         'source_code': 'https://github.com/TobiKehinde/restaurant-website.git',
         'visit_site': 'https://eat-right.netlify.app',
     },
